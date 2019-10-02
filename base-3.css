@@ -1,0 +1,38 @@
+/* ==== BROWSER RESETS  ==== */
+* { padding: 0; margin: 0; border: 0; font-weight: normal; font-size: 16px }
+
+body, html { height: 100% } 
+
+body { max-width: 1600px; margin: 0 auto }
+
+p { 
+    font-size: calc(15px + (18 - 15) * ((100vw - 320px)/(1600 - 320)));
+ }
+
+ h1 {
+    
+    font-size: calc(42px + (64 - 42) * ((100vw - 320px)/(1600 - 320)));
+   
+
+ }
+
+ h2 {
+    
+    font-size: calc(32px + (48 - 32) * ((100vw - 320px)/(1600 - 320)));
+   
+
+ }
+
+ h3 {
+    
+    font-size: calc(22px + (28 - 22) * ((100vw - 320px)/(1600 - 320)));
+    
+
+ }
+
+ p { 
+    
+    font-size: calc(15px + (18 - 15) * ((100vw - 320px)/(1600 - 320)));
+  
+
+ }
