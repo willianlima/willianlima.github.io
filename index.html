@@ -5,15 +5,16 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Mary Smith | Web Design and Development Portfolio</title>
-	<meta name="description" content="Welcome to my personal website. Enjoy some examples of my web design and web development work.">
+	<title>Web Design Portfolio | Mary Smith</title>
+	<meta name="description" content="Some of my recent website projects.">
 
 	<meta name="author" content="Mary Smith">
 
-	<link rel="stylesheet" href="assets/css/home-page-sample-2.css">
+	<link rel="stylesheet" href="assets/css/portfolio-3.css">
 
-	<!-- Link to Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap" rel="stylesheet"> 
+	<style>
+		p.note { text-align:center; margin-bottom:32px }
+	</style>
 
 	<!-- Link to icons for Font Awesome 4 -->
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -35,10 +36,11 @@
 <body>
 
 <!-- begin menu mobile -->
-<div class="container-menu-bar-mobile menu-mobile-transparent menu-mobile-sticky">
+
+<div class="container-menu-bar-mobile menu-mobile-dark menu-mobile-sticky">
 	<div class="item-logo">
 		<a href="../index.html">
-			<img src="assets/img/logo-blue.png" alt="logo">
+			<img src="assets/img/logo-purple.png" alt="logo">
 		</a>
 	</div>
 	<div class="item-icon">
@@ -50,26 +52,28 @@
 
 <div class="container-menu-options-mobile menu-mobile-dark">
 	<ul>
-		<li><a href="index.html">Home</a></li>
-		<li><a href="portfolio/index.html">Work</a></li>
-		<li><a href="contact.html" class="btn-solid btn-rounded"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;Contact</a></li>
+		<li><a href="../index.html">Home</a></li>
+		<li><a href="index.html">Portfolio</a></li>
+		<li><a href="../privacy.html">Privacy</a></li>
+		<li><a href="../contact.html" class="btn-solid btn-rounded">Get in touch</a></li>
 	</ul>
 </div>
 <!-- end menu mobile -->
 
 
 <!-- begin menu desktop -->
-<div class="container-menu-desktop menu-desktop-transparent menu-desktop-sticky">
+<div class="container-menu-desktop menu-desktop-dark menu-desktop-sticky">
 	<div class="item-logo">
 		<a href="../index.html">
-			<img src="assets/img/logo-blue.png" alt="logo">
+			<img src="assets/img/logo-purple.png" alt="logo">
 		</a>
 	</div>
 	<div class="item-menu">
 		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="portfolio/index.html">Projects</a></li>
-			<li><a href="contact" class="btn-solid btn-rounded"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</a></li>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="index.html">Portfolio</a></li>
+			<li><a href="../privacy.html">Privacy</a></li>
+			<li><a href="../contact.html" class="btn-solid btn-rounded">Get in touch</a></li>
 		</ul>
 	</div>
 </div>
@@ -78,62 +82,129 @@
 
 <!-- begin page content -->
 
-<div class="hero-block">
-	<div class="flex-grid-two">
-		<div class="col-gutter">
-			<div class="slide-in-left">
-				<h1>Websites:</h1>
-				<h2>Designed.<br>
-				Developed.<br>
-				Deployed.</h2>
-			</div>
-		</div>
-		<div class="col-gutter">
-			<img src="assets/img/home-page-designer-removebg-preview.png" alt="web design">
-		</div>
-	</div><!--- /flex-grid -->
+
+<div class="hero-block-9">
+	<div class="slide-in-left">
+		<h1>Portfolio</h1>
+		<hr>
+		<h2>Welcome to a selection of my web design and development work.</h2>
+	</div>
 </div>
 
-<div class="container-full-feature">
 
 
-	<h2>Recent projects</h2>
-	<p>For the <a href="project-sample-1/index.html">IBAT Tours Travel Agency</a>, I completed a three-page website that features a list of their <a href="project-sample-1/destinations.html">destinations</a> and a collection of <a href="project-sample-1/about-us.html">customer testimonials</a>.</p>
+
+<div class="container-narrow">
+
+	<p class="note">(<b>NOTE</B>: See alternative versions:  <a href="index-1.html">here</a> and  <a href="index-2.html">here</a>.)</p>
 
 	<div class="flex-grid-three">
+
 		<div class="col-gutter">
-			<img src="assets/img/ibat-tours-screen-desktop-1.jpg" alt="sample screen 1">
+			<a href="../tourism.html">
+				<img src="assets/img/tourism.png" class="img-fluid images-shadow"  alt="portfolio powerpoint">
+			</a>
+			<h3>Irish Tourism</h3>
+			<p>A responsive web page with images and external hyperlinks that showcases Ireland&#8217;s most-visited tourist destinations.</p>
+			<a class="btn-solid btn-soft" href="../tourism.html">View web page</a>
 		</div>
+
 		<div class="col-gutter">
-			<img src="assets/img/ibat-tours-screen-desktop-2.jpg" alt="sample screen 2">
+			<a href="../how-to-set-up-a-website/index.html">
+				<img src="assets/img/portfolio-setup.png"  class="img-fluid images-shadow"  alt="portfolio careers summit">
+			</a>
+			<h3>Website Setup</h3>
+			<p>A responsive web page with three levels of heading, images, background colours and highlighted &lt;div&gt; elements.</p>
+			<a class="btn-solid btn-soft" href="../how-to-set-up-a-website/index.html">View web page</a>
 		</div>
+
 		<div class="col-gutter">
-			<img src="assets/img/ibat-tours-screen-desktop-3.jpg" alt="sample screen 3">
+			<a href="../hero/index.html">
+				<img src="assets/img/portfolio-hero.png" class="img-fluid images-shadow"  alt="portfolio hero">
+			</a>
+			<h3>Hero Blocks</h3>
+			<p>A showcase of hero blocks with various Google fonts, alignments, colours, gradients and background images.</p>
+			<a  class="btn-solid btn-soft" href="../hero/index.html">View web page</a>
 		</div>
+
 	</div><!--- /flex-grid -->
+
 </div><!--- /container -->
 
 
+<div class="container-narrow">
+
+	<div class="flex-grid-three">
+
+		<div class="col-gutter">
+			<a href="../menus/menu-desktop-1.html">
+				<img src="assets/img/portfolio-menus.png" class="img-fluid images-shadow"  alt="portfolio flexbox columns">
+			</a>
+			<h3>Desktop and Mobile Menus</h3>
+			<p>Navigation menus for desktop and mobile screens. Includes on-scroll background colour change options in JavaScript.</p>
+			<a class="btn-solid btn-soft" href="../menus/menu-desktop-1.html">View web page</a>
+		</div>
+
+		<div class="col-gutter">
+			<a href="../project-sample-1/index.html">
+				<img src="assets/img/sample-website-1.png" class="img-fluid images-shadow"  alt="portfolio final project 1">
+			</a>
+			<h3>IBAT Travel Agency</h3>
+			<p>Three-page website for a fictitious global travel agency. Includes Home, Destinations and About Us sample web pages.</p>
+			<a  class="btn-solid btn-soft" href="../project-sample-1/index.html">View web page</a>
+		</div>
+
+		<div class="col-gutter">
+			<a href="../project-sample-2/index.html">
+				<img src="assets/img/sample-website-2.png" class="img-fluid images-shadow"  alt="portfolio final project 2">
+			</a>
+			<h3>Web Design Agency</h3>
+			<p>Three-page website for a fictitious digital design and marketing agency. Includes Home, Services and Team sample web pages.</p>
+			<a class="btn-solid btn-soft" href="../project-sample-2/index.html">View web page</a>
+		</div>
+
+	</div><!--- /flex-grid -->
+
+</div><!--- /container -->
+
 <div class="container-footer">
+
 	<div class="flex-grid-footer">
+
 		<div class="col-gutter">
-			<h4>Site Map</h4>
-			<p><i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;<a href="index.html">Home</a></p>
-			<p><i class="fa fa-file" aria-hidden="true"></i>&nbsp;&nbsp;<a href="../portfolio/index.html">Portfolio</a></p>
-			<p><i class="fa fa-lock" aria-hidden="true"></i>&nbsp;&nbsp;<a href="../privacy.html">Privacy</a></p>
+
+			<h4>SITE MAP</h4>
+
+			<p><i class="fa fa-home"></i>&nbsp;&nbsp;<a href="../index.html">Home</a></p>
+
+			<p><i class="fa fa-file"></i>&nbsp;&nbsp;<a href="index.html">Portfolio</a></p>
+
+			<p><i class="fa fa-lock"></i>&nbsp;&nbsp;<a href="../privacy.html">Privacy</a></p>
+		
 		</div><!-- /column -->
+
 		<div class="col-gutter">
-			<h4>About Me</h4>
-			<p>Hi, I&#8217;m Mary Smith. I'm a web designer and developer. I created this website to showcase some of my projects.</p>
+			<h4>ABOUT ME</h4>
+			<p>Hi, I'm Mary Smith. I'm a web designer and developer.</p>
+			<p>I created this website to showcase some of the projects I have created.</p>
 		</div><!-- /column -->
+
 		<div class="col-gutter">
-			<h4>Contact</h4>
+
+			<h4>CONTACT</h4>
+
 			<p><i class="fa fa-envelope"></i>&nbsp;&nbsp;<a href="mailto:ibat.training@gmail.com">Email</a></p>
+
 			<p><i class="fa fa-github-square"></i>&nbsp;&nbsp;<a href="https://www.github.com/ibat-web-dev" target="_blank">GitHub</a></p>
+
 			<p><i class="fa fa-linkedin"></i>&nbsp;&nbsp;<a href="https://ie.linkedin.com/school/ibat-college-dublin/" target="_blank">Linkedin</a></p>
+
 		</div><!-- /column -->
+
 	</div><!-- /flexgrid -->
+	
 </div> <!-- /footer -->
+
 
 
 <!-- Begin JavaScript code showing/hiding slide-out menu -->
@@ -157,43 +228,8 @@
 </script>
 <!-- End JavaScript code showing/hiding slide-out menu -->
 
-<!-- Begin JavaScript code for menu styles on scrolling -->
-<script>
-
-	window.onscroll = function() {
-		scrollDesktop();
-		scrollMobile();
-	}
-
-	function scrollDesktop() {
-		let headerDesktop = document.querySelector('.container-menu-desktop');
-		let stickyDesktop = headerDesktop.offsetTop;
-
-		if (window.pageYOffset > stickyDesktop) {
-			headerDesktop.classList.add("menu-desktop-dark");
-			headerDesktop.classList.remove("menu-desktop-transparent");
-		} else {
-			headerDesktop.classList.add("menu-desktop-transparent");
-			headerDesktop.classList.remove("menu-desktop-dark");
-		}
-	}
-
-	function scrollMobile() {
-		let headerMobile = document.querySelector('.container-menu-bar-mobile');
-		let stickyMobile = headerMobile.offsetTop;
-		if (window.pageYOffset > stickyMobile) {
-			headerMobile.classList.add("menu-mobile-dark");
-			headerMobile.classList.remove("menu-mobile-transparent");
-		} else {
-			headerMobile.classList.add("menu-mobile-transparent");
-			headerMobile.classList.remove("menu-mobile-dark");
-		}
-	}
-</script>
-<!-- End JavaScript code for menu styles on scrolling -->
-
-<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
-<script>
+	<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+	<script>
 	window.cookieconsent.initialise({
 	  "palette": {
 		"popup": {
@@ -207,7 +243,8 @@
 		"href": "https://www.munnelly.com/legal/"
 	  }
 	});
-</script>
+	</script>
+
 
 </body>
 </html>
