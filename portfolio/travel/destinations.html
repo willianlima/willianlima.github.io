@@ -13,6 +13,10 @@
 
 	<link rel="stylesheet" href="assets/css/style.css">
 
+	<!-- Link to icons for Font Awesome 5 -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+ </head>
+ 
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i|Roboto+Slab:400,700&display=swap" rel="stylesheet">
 
 	<style>
@@ -36,6 +40,41 @@
 </head>
 
 <body>
+<!-- Begin desktop menu -->
+<div class="container-menu-desktop menu-dark">
+        <a href="index.html"><img src="assets/img/menus-logo.png"></a>
+        <ul>
+				<li><a href="index.html">home</a></li>
+				<li><a href="destinations.html">destinations</a></li>
+				<li><a href="about-us.html">about-us</a></li>
+            <li><a href="#" class="btn-cta">CTA Button</a></li>
+        </ul>
+    </div>
+    <!-- End desktop menu -->
+
+
+    <!-- Begin menu mobile -->
+
+    <div class="container-menu-bar-mobile menu-dark">
+        <div class="item-logo">
+            <img src="menus-logo.png" alt="logo">
+        </div>
+        <div class="item-icon">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </div>
+
+    <div class="container-menu-options-mobile menu-dark">
+        <ul>
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">option 2</a></li>
+            <li><a href="#">Option 3</a></li>
+            <li><a href="#" class="btn-cta">CTA Button</a></li>
+        </ul>
+    </div>
+    <!-- end menu mobile -->
 
 
 	<div class="hero-block-5">
@@ -164,7 +203,55 @@
 		</div>
 
 	</div><!-- end container-flexbox -->
+<!-- Begin footer -->
+<div class="container-footer">
 
+	<div class="item-3">
+
+		<h4>SITE MAP</h4>
+		<p><i class="fas fa-home fa-fw"></i><a href="index.html">Home</a></p>
+		<p><i class="far fa-file-alt fa-fw"></i><a href="index.html">Portfolio</a></p>
+		<p><i class="fas fa-lock fa-fw"></i><a href="privacy.html">Privacy</a></p>
+	
+	</div>
+
+	<div class="item-3">
+		<h4>ABOUT ME</h4>
+		<p>Hi, I'm Willian Lima. I'm a web designer and developer.</p>
+		
+		<p>I created this sample web page to showcase some of my digital creation skills.</p>
+	</div>
+
+	<div class="item-3">
+		<h4>CONTACT</h4>
+		<p><i class="far fa-envelope fa-fw"></i><a href="mailto:willianlimaandrade@gmail.com">Email</a></p>
+		<p><i class="fab fa-github-square fa-fw"></i><a href="https://www.github.com/willianlima" target="_blank">GitHub</a></p>
+		<p><i class="fab fa-linkedin fa-fw"></i><a href="https://www.linkedin.com/in/willian-andrade-223695171/" target="_blank">Linkedin</a></p>
+	</div>
+</div>
+
+<!-- End footer -->
+
+<!-- Begin JavaScript code showing/hiding slide-out menu -->
+<script>
+	document.querySelector('.item-icon').addEventListener('click', toggleMobileMenu)
+
+	function toggleMobileMenu() {
+		//toggle hamburger icon
+		let elemIcon = document.querySelector('.item-icon');
+		elemIcon.classList.toggle("change");
+	
+		//if mobile menu currently closed, open menu.
+		if (elemIcon.classList.contains('change')) {
+			document.querySelector(".container-menu-options-mobile").style.right = "0";
+		}
+		//if mobile menu currently open, close menu.
+		else {
+			document.querySelector(".container-menu-options-mobile").style.right = "-320px";
+		}
+	}
+</script>
+<!-- End JavaScript code showing/hiding slide-out menu -->
 
 </BODY>
 </HTML>

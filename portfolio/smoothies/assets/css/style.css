@@ -5,6 +5,96 @@ body { max-width: 1600px; font-family: sans-serif }
 img { width: 100%; height: auto }
 * { margin:0; padding:0; box-sizing: border-box }
 
+/* Desktop - show this menu  */
+
+@media all and (min-width:768px) {
+	.container-menu-desktop {
+		display: flex;
+		justify-content: space-between;
+		padding: 1% 5% 1% 5%;
+		margin-bottom: -64px;
+		background-color:transparent
+		
+	}
+
+
+
+	.container-menu-desktop .item-logo {
+		
+	}
+
+	.container-menu-desktop .item-menu-options  {
+		
+	}
+
+	.container-menu-desktop .item-menu-options ul li {
+		display: inline-block;
+		margin-left: 32px;
+	
+
+	}
+
+	.container-menu-desktop .item-menu-options ul li a:link,
+	.container-menu-desktop .item-menu-options ul li a:visited {
+		text-decoration:none;
+		color: #fff
+	}
+
+	.container-menu-desktop .item-menu-options ul li a:hover,
+	.container-menu-desktop .item-menu-options ul li a:active {
+		text-decoration:underline
+	}
+
+	.container-menu-desktop .item-menu-options ul li a.btn:link,
+	.container-menu-desktop .item-menu-options ul li a.btn:visited
+	.container-menu-desktop .item-menu-options ul li a.btn:hover,
+	.container-menu-desktop .item-menu-options ul li a.btn:active{
+			text-decoration: none;
+			color: inherit;
+			border-style: solid;
+			border-width: 2px;
+			padding: 6px 24px;
+			display: inline-block;
+			font-weight: bold;
+			font-family: sans-serif;
+			letter-spacing: 1px;
+			line-height: 1;
+			border-radius: 25px
+
+		 
+
+	}
+
+	.container-menu-desktop .item-menu-options ul li a.btn:hover,
+	.container-menu-desktop .item-menu-options ul li a.btn:active {
+		text-decoration: underline;
+		color: inherit;
+			border-style: solid;
+			border-width: 2px;
+			padding: 6px 12px;
+			display: inline-block;
+			font-weight: bold;
+			font-family: sans-serif;
+			letter-spacing: 1px;
+			line-height: 1;
+			border-radius: 25px
+	
+
+	}
+
+}
+
+
+/* Mobiles - hide this menu */
+@media all and (max-width:767px) {
+	.container-menu-desktop{
+		display: none;
+	}
+}
+
+
+
+
 /* === HERO BLOCK 5 === */
 
 .hero-block-5 {
@@ -155,5 +245,86 @@ img { width: 100%; height: auto }
 }
 
 
+/* ============ FOOTER STYLES ================= */
 
+/* Outer parent container */
+.container-footer { 
+	display: flex;
+	justify-content: space-between;
+   flex-wrap: wrap;
+   background:#2c3e50
+}
+
+/* Desktop - inside padding  */
+@media all and (min-width:768px) {
+	.container-footer { padding: 3% 8% 5% 8% }
+}
+
+/* Mobiles - inside padding */
+@media all and (max-width:767px) {
+	.container-footer { padding: 12% 8% 1% 8% }
+}
+
+/* Inner columns */
+
+/* Desktops - 3 columns */
+@media all and (min-width:768px) { 
+   .container-footer .item-3:nth-child(1) { width: 20% }
+   .container-footer .item-3:nth-child(2) { width: 50% }
+   .container-footer .item-3:nth-child(3) { width: 20% }
+}
+
+/* Mobiles - 1 column */
+@media all and (max-width:767px) { 
+	.container-footer .item-3 { 
+      width: 100%;
+      margin-bottom: 10%
+   }
+   .container-footer .item-3:nth-child(2) { order: 1 }
+   .container-footer .item-3:nth-child(1) { order: 2 }
+   .container-footer .item-3:nth-child(3) { order: 3 } 
+}
+
+/* Styles for background, text and links */
+
+.container-footer .item-3 h4,
+.container-footer .item-3 p,
+.container-footer .item-3 p i,
+.container-footer .item-3 p a {
+   color: #fff
+}
+
+.container-footer .item-3 h4 {
+   font-weight: bold;
+   margin-bottom: 12px;
+   font-size: calc(18px + (20 - 18) * ((100vw - 320px)/(1600 - 320)));
+}
+
+.container-footer .item-3 p {
+   font-weight: normal;
+   margin-bottom: 12px;
+   font-size: calc(15px + (18 - 15) * ((100vw - 320px)/(1600 - 320)));
+}
+
+.container-footer .item-3 i { 
+   padding-right: 26px;
+} 
+
+.container-footer .item-3 p a {
+   text-decoration: none;
+   border-bottom-style: solid;
+   border-bottom-width: 2px;
+   padding-bottom:2px;
+}
+
+.container-footer .item-3 p a:link, 
+.container-footer .item-3 p a:visited  {
+   border-bottom-color: transparent;
+}
+
+.container-footer .item-3 p a:hover, 
+.container-footer .item-3 p a:active  {
+   border-bottom-color: #fff
+
+}
 
