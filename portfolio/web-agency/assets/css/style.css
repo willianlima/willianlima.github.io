@@ -11,7 +11,6 @@ body {
     color: #500294;
 }
 
-
 /* ================================== FLEXBOX PARENT CONTAINER ============================= */
 
 .container-flexbox { 
@@ -22,15 +21,13 @@ body {
 
 /* Desktops only - inside padding  */
 @media all and (min-width:768px) {
-	.container-flexbox { padding: 1% 10% 1% 10% }
+	.container-flexbox { padding: 2% 10% 2% 10% }
 }
 
 /* Mobiles only - inside padding */
 @media all and (max-width:767px) {
 	.container-flexbox { padding: 7% 8% 1% 8% }
 }
-
-
 
 /* ====== FLEXBOX ITEM COLUMNS: 2 COLUMNS ON DESKTOPS, 1 COLUMN ON MOBILES ====== */
 /* Used only for 'hero block' */
@@ -116,7 +113,9 @@ body {
 
 /* ================== STYLES FOR HEADINGS, PARAGRAPHS, IMAGES  ============== */
 
-.bg-pastel-pink { background-color: #fef1ef }
+.container-flexbox.bg-pastel-pink { background-color: #fef1ef } 
+.container-flexbox .item-3.bg-pastel-blue { background-color: #d7edff }
+
 img.image-shadow { box-shadow: 8px 10px 8px #888 }
 
 /* Hero block layout at top of pages  */
@@ -136,29 +135,6 @@ img.image-shadow { box-shadow: 8px 10px 8px #888 }
 	font-size: calc(16px + (28 - 16) * ((100vw - 320px)/(1600 - 320)));
 	line-height: 1.5;
 }
-
-.container-flexbox.hero-block hr {
-    background-color: #FF3366;
-    border: none;
-    height: 10px;
-    width: 40%;
-}
-
-/* Desktops */
-@media all and (min-width:769px) { 
-    .container-flexbox.hero-block hr {
-        margin:20px 0 60px 0
-    }
-}
-
-/* Mobiles */
-@media all and (max-width:767px) { 
-    .container-flexbox.hero-block hr {
-        text-align: center;
-        margin:20px auto 20px auto;
-    }
-}
-
 
 
 /* Single column layout */
@@ -235,10 +211,9 @@ img.image-shadow { box-shadow: 8px 10px 8px #888 }
 }
 
 .container-flexbox .item-4-2 i { 
-    color: #500294;
-    color: red;
     font-size: calc(48px + (94 - 48) * ((100vw - 320px) / (1600 - 320))); 
-    margin-bottom:5%;
+    color:#FF3366;
+    margin-bottom: 5%;
 }
 
 /* ----------------------------------------------
@@ -265,92 +240,36 @@ img.image-shadow { box-shadow: 8px 10px 8px #888 }
 
 .container-flexbox .item-1 .no-margin-bottom { margin-bottom: 0 }
 .container-flexbox .item-3.no-padding-bottom { padding-bottom: 0 }
-.container-flexbox .item-3.bg-pastel-blue { background-color: #d7edff }
 
-/*
-div { border: solid 2px red }
-div div { border: solid 2px blue }
 
-*/
-/* ============ FOOTER STYLES ================= */
-
-/* Outer parent container */
-.container-footer { 
-	display: flex;
-	justify-content: space-between;
-   flex-wrap: wrap;
-   background:#2c3e50
+div { 
+    border-width: 2px;
+    border-style: solid;
+    border-color: red
 }
 
-/* Desktop - inside padding  */
-@media all and (min-width:768px) {
-	.container-footer { padding: 3% 8% 5% 8% }
+div div { 
+    border-width: 2px;
+    border-style: solid;
+    border-color: blue
 }
 
-/* Mobiles - inside padding */
-@media all and (max-width:767px) {
-	.container-footer { padding: 12% 8% 1% 8% }
+.container-flexbox.hero-block hr{
+    background-color: #FF3366;
+    border:none;
+    height:10px;
+    width: 40%;
 }
-
-/* Inner columns */
-
-/* Desktops - 3 columns */
-@media all and (min-width:768px) { 
-   .container-footer .item-3:nth-child(1) { width: 20% }
-   .container-footer .item-3:nth-child(2) { width: 50% }
-   .container-footer .item-3:nth-child(3) { width: 20% }
+/*desktop*/
+@media all and (min-width:769){
+    .container-flexbox.hero-block hr{
+        margin:20px 0 60 px 0
+    }
 }
-
-/* Mobiles - 1 column */
-@media all and (max-width:767px) { 
-	.container-footer .item-3 { 
-      width: 100%;
-      margin-bottom: 10%
-   }
-   .container-footer .item-3:nth-child(2) { order: 1 }
-   .container-footer .item-3:nth-child(1) { order: 2 }
-   .container-footer .item-3:nth-child(3) { order: 3 } 
-}
-
-/* Styles for background, text and links */
-
-.container-footer .item-3 h4,
-.container-footer .item-3 p,
-.container-footer .item-3 p i,
-.container-footer .item-3 p a {
-   color: #fff
-}
-
-.container-footer .item-3 h4 {
-   font-weight: bold;
-   margin-bottom: 12px;
-   font-size: calc(18px + (20 - 18) * ((100vw - 320px)/(1600 - 320)));
-}
-
-.container-footer .item-3 p {
-   font-weight: normal;
-   margin-bottom: 12px;
-   font-size: calc(15px + (18 - 15) * ((100vw - 320px)/(1600 - 320)));
-}
-
-.container-footer .item-3 i { 
-   padding-right: 26px;
-} 
-
-.container-footer .item-3 p a {
-   text-decoration: none;
-   border-bottom-style: solid;
-   border-bottom-width: 2px;
-   padding-bottom:2px;
-}
-
-.container-footer .item-3 p a:link, 
-.container-footer .item-3 p a:visited  {
-   border-bottom-color: transparent;
-}
-
-.container-footer .item-3 p a:hover, 
-.container-footer .item-3 p a:active  {
-   border-bottom-color: #fff
-
+/*mobile*/
+@media all and (min-width:767){
+    .container-flexbox.hero-block hr{
+        text-align: center;
+        margin:20px auto 60 px auto
+    }
 }
